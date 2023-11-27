@@ -8,7 +8,7 @@ on:
       - synchronize
 
 permissions:
-  pull-requests: write
+  pull-requests: read
 
 jobs:
   validate:
@@ -28,8 +28,4 @@ jobs:
           requireScope: false
           subjectPattern: ^[A-Z].+$
           subjectPatternError: |
-            The subject "{subject}" found in the pull request title "{title}"
-            didn't match the configured pattern. Please ensure that the subject
-            starts with an uppercase character.
-          wip: true
-          validateSingleCommit: true
+            The subject "{subject}" found in the pull request title "{title}" didn't match the configured pattern. Please ensure that the subject starts with an uppercase character.

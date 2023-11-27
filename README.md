@@ -8,7 +8,7 @@ An example Terraform module repository used to showcase automation and tooling.
 - [x] Terraform documentation validation using `terraform-docs`.
 - [x] Terraform formatting validation using `terraform fmt`.
 - [x] Terraform security checks using `tfsec`.
-- [ ] Terraform linting with `tflint`.
+- [x] Terraform linting with `tflint`.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements

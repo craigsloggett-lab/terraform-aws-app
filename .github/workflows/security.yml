@@ -5,7 +5,6 @@ on:
 
 permissions:
   contents: read
-  pull-requests: write
 
 jobs:
   security:
@@ -14,7 +13,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: tfsec
-      uses: aquasecurity/tfsec-pr-commenter-action@v1.3.1
+    - name: Checkov GitHub Action
+      uses: bridgecrewio/checkov-action@v12
       with:
-        github_token: ${{ github.token }}
+        output_format: cli
+        output_file_path: console

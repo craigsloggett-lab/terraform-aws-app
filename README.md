@@ -4,6 +4,7 @@ An example Terraform module repository used to showcase automation and tooling.
 
 ## Key Features
 
+- [x] Automatic dependency updates using `dependabot`.
 - [x] Automatic release management using `semantic-release`.
 - [x] Terraform documentation validation using `terraform-docs`.
 - [x] Terraform formatting validation using `terraform fmt`.

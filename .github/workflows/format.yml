@@ -20,3 +20,10 @@ jobs:
     - name: Format Code
       run: |
         terraform fmt -recursive .
+    - name: Commit Format Changes
+      run: |
+        git config user.name 'GitHub Actions'
+        git config user.email 'actions@github.com'
+        git add .
+        git diff-index --quiet HEAD || git commit -m "terraform-fmt: Auto format codebase"
+        git push

@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Dependabot Metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v1.5.1
+        uses: dependabot/fetch-metadata@v1.6.0
       - name: Enable Auto-merge for Dependabot PRs
         if: ${{ steps.metadata.outputs.update-type == 'version-update:semver-minor' }}
         env:

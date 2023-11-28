@@ -4,7 +4,7 @@ on:
   pull_request
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   format:
@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
       with:

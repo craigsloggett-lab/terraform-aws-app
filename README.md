@@ -8,7 +8,7 @@ An example Terraform module repository used to showcase automation and tooling.
 - [x] Automatic release management using `semantic-release`.
 - [x] Terraform documentation validation using `terraform-docs`.
 - [x] Terraform formatting validation using `terraform fmt`.
-- [x] Terraform security checks using `tfsec`.
+- [x] Terraform security checks using `checkov`.
 - [x] Terraform linting with `tflint`.
 
 <!-- BEGIN_TF_DOCS -->
@@ -21,9 +21,7 @@ An example Terraform module repository used to showcase automation and tooling.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.26.0 |
+No providers.
 
 ## Modules
 
@@ -31,10 +29,7 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/caller_identity) | data source |
-| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/region) | data source |
+No resources.
 
 ## Inputs
 

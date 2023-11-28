@@ -35,7 +35,6 @@ No modules.
 |------|------|
 | [aws_dynamodb_table.terraform_state_locks](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/dynamodb_table) | resource |
 | [aws_s3_bucket.terraform_state](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket) | resource |
-| [aws_s3_bucket_acl.terraform_state_acl](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_acl) | resource |
 | [aws_s3_bucket_public_access_block.terraform_state_public_access_block](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_public_access_block) | resource |
 | [aws_s3_bucket_server_side_encryption_configuration.terraform_state_sse](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_server_side_encryption_configuration) | resource |
 | [aws_s3_bucket_versioning.terraform_state_versioning](https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_versioning) | resource |

@@ -1,0 +1,17 @@
+name: "Check Required Files"
+on: workflow_dispatch
+jobs:
+  check-codeowners:
+    runs-on: ubuntu-latest
+    steps:
+      -  uses: actions/checkout@v4
+      -  name: GitHub CODEOWNERS Validator
+         uses: mszostok/codeowners-validator@v0.7.4
+         with:
+           checks: "files"
+      - name: Check README.md, backend.tf, provider.tf
+        id: check_files
+        uses: andstor/file-existence-action@v2
+        with:
+          files: "README.md, tests/backend.tf, tests/provider.tf"
+          fail: true

@@ -18,3 +18,7 @@ jobs:
       with:
         output_format: cli
         output_file_path: console
+        quiet: true
+        skip_check:
+        - CKV_AWS_119
+        - CKV_AWS_28

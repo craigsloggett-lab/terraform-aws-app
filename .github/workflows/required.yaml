@@ -1,7 +1,7 @@
 name: "Check Required Files"
 on: workflow_dispatch
 jobs:
-  check-codeowners:
+  files:
     runs-on: ubuntu-latest
     steps:
       -  uses: actions/checkout@v4

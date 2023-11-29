@@ -1,7 +1,13 @@
-name: "Check Required Files"
+name: Check Files
+
 on: workflow_dispatch
+
+permissions:
+  contents: read
+
 jobs:
-  files:
+  required:
+    name: Required
     runs-on: ubuntu-latest
     steps:
       -  uses: actions/checkout@v4

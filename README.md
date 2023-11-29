@@ -10,6 +10,7 @@ An example Terraform module repository used to showcase automation and tooling.
 - [x] Terraform formatting validation using `terraform fmt`.
 - [x] Terraform security checks using `checkov`.
 - [x] Terraform linting with `tflint`.
+- [x] Ensure required files exist in the repository (for example, CODEOWNERS).
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements

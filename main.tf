@@ -1,6 +1,6 @@
 # S3 Bucket
 
-resource "aws_s3_bucket" "terraform-state" {
+resource "aws_s3_bucket" "terraform_state" {
   bucket = local.bucket_name
 }
 

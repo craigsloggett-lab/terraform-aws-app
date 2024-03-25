@@ -1,7 +1,6 @@
 name: Generate Docs
 
-on:
-  pull_request
+on: pull_request
 
 permissions:
   contents: write
@@ -11,15 +10,14 @@ jobs:
     name: Generate Docs
     runs-on: ubuntu-22.04
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        ref: ${{ github.event.pull_request.head.ref }}
-        token: ${{ secrets.AUTO_COMMIT_TOKEN }}
-    - name: Generate Docs
-      uses: terraform-docs/gh-actions@v1.0.0
-      with:
-        git-push: true
-        git-push-user-name: "GitHub Actions"
-        git-push-user-email: "actions@github.com"
-        git-commit-message: "fix: Auto update Terraform docs"
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Generate Docs
+        uses: terraform-docs/gh-actions@v1.0.0
+        with:
+          git-push: true
+          git-push-user-name: "GitHub Actions"
+          git-push-user-email: "actions@github.com"
+          git-commit-message: "fix: Auto update Terraform docs"

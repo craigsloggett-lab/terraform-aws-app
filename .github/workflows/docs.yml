@@ -15,7 +15,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
       - name: Generate Docs
-        uses: terraform-docs/gh-actions@v1.0.0
+        uses: terraform-docs/gh-actions@v1.1.0
         with:
           git-push: true
           git-push-user-name: "GitHub Actions"

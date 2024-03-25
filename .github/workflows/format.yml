@@ -1,7 +1,6 @@
 name: Format Code
 
-on:
-  pull_request
+on: pull_request
 
 permissions:
   contents: write
@@ -11,22 +10,21 @@ jobs:
     name: Format Code
     runs-on: ubuntu-22.04
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        ref: ${{ github.event.pull_request.head.ref }}
-        token: ${{ secrets.AUTO_COMMIT_TOKEN }}
-    - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v3
-      with:
-        terraform_version: "1.0.0"
-    - name: Format Code
-      run: |
-        terraform fmt -recursive .
-    - name: Commit Format Changes
-      run: |
-        git config user.name 'GitHub Actions'
-        git config user.email 'actions@github.com'
-        git add .
-        git diff-index --quiet HEAD || git commit -m "fix: Auto format codebase"
-        git push
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.2.0"
+      - name: Format Code
+        run: |
+          terraform fmt -recursive .
+      - name: Commit Format Changes
+        run: |
+          git config user.name 'GitHub Actions'
+          git config user.email 'actions@github.com'
+          git add .
+          git diff-index --quiet HEAD || git commit -m "fix: Auto format codebase"
+          git push

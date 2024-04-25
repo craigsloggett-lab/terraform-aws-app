@@ -45,7 +45,10 @@ No modules.
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | The name of the S3 bucket used for Terraform state. | `string` | `"terraform-state"` | no |
+| <a name="input_table_name"></a> [table\_name](#input\_table\_name) | The name of the DynamoDB Table used for Terraform state locks. | `string` | `"terraform-state-locks"` | no |
 
 ## Outputs
 

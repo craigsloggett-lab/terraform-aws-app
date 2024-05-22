@@ -9,7 +9,6 @@ plugins:
           release: patch
         - type: major
           release: major
-  - '@semantic-release/git'
   - - '@semantic-release/release-notes-generator'
     - preset: conventionalCommits
       presetConfig:
@@ -24,4 +23,5 @@ plugins:
             section: Features
           - type: major
             section: Breaking Changes
+  - '@semantic-release/git'
   - '@semantic-release/github'

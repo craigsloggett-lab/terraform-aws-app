@@ -1,8 +1,4 @@
-branches:
-  - main
-
-ci: false
-
+branches: main
 plugins:
   - - '@semantic-release/commit-analyzer'
     - preset: conventionalCommits
@@ -14,5 +10,4 @@ plugins:
         - type: major
           release: major
   - '@semantic-release/git'
-
-preset: conventionalcommits
+  - '@semantic-release/github'

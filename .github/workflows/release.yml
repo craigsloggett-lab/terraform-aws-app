@@ -1,15 +1,9 @@
 name: Release
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
-    paths:
-      - '**/*.tf'
-      - '**/*.md'
-      - .github/workflows/*.yml
-      - LICENSE
 
 permissions:
   contents: write
@@ -26,11 +20,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@44c2b7a8a4ea60a981eaca3cf939b5f4305c123b # v4.1.5
       - name: Release
-        uses: cycjimmy/semantic-release-action@61680d0e9b02ff86f5648ade99e01be17f0260a4 # v4.0.0
+        uses: cycjimmy/semantic-release-action@cb425203a562475bca039ba4dbf90c7f9ac790f4 # v4.1.0
         with:
           semantic_version: 23.0.5
           extra_plugins: |
             @semantic-release/git@10.0.1
-            conventional-changelog-conventionalcommits@7.0.2
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -32,5 +32,3 @@ plugin "terraform" {
   source  = "github.com/terraform-linters/tflint-ruleset-terraform"
   preset  = "all"
 }
-
-

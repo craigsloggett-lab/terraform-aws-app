@@ -10,4 +10,18 @@ plugins:
         - type: major
           release: major
   - '@semantic-release/git'
+  - - '@semantic-release/release-notes-generator'
+    - preset: conventionalCommits
+      presetConfig:
+        types:
+          - type: docs
+            section: Documentation
+          - type: ci
+            section: CI
+          - type: fix
+            section: Bug Fixes
+          - type: feat
+            section: Features
+          - type: major
+            section: Breaking Changes
   - '@semantic-release/github'

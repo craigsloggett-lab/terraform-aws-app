@@ -38,7 +38,8 @@ $(BIN)/terraform:
 .PHONY: test
 test:
 	@echo "Testing..."
-	@terraform --version
+	@terraform init
+	@terraform plan
 
 .PHONY: clean
 clean:

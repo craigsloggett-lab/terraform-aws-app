@@ -1,2 +1,0 @@
-bucket_name = "terraform-state"
-table_name  = "terraform-state-locks"

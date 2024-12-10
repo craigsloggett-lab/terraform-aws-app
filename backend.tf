@@ -3,7 +3,7 @@ terraform {
     organization = "craigsloggett-lab"
 
     workspaces {
-      name = "terraform-aws-app"
+      name = "hvd-1296"
     }
   }
 }

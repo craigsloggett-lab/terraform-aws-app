@@ -17,7 +17,7 @@ An example Terraform module repository used to showcase automation and tooling.
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 5.81.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 5.82.2 |
 
 ## Providers
 

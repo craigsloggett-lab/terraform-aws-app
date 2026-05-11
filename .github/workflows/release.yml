@@ -21,6 +21,6 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Create a GitHub Release
         id: release
-        uses: craigsloggett/create-github-release@bef3a8d44ef83bb53291139c5757dab76d087f16 # v1.0.9
+        uses: craigsloggett/create-github-release@e61cd042cf56de1a2b32780850496924b10d7b30 # v1.0.18
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

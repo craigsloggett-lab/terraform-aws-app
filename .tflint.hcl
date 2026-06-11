@@ -17,7 +17,7 @@ rule "terraform_module_pinned_source" {
 # Checks that Terraform modules sourced from a registry specify a version.
 rule "terraform_module_version" {
   enabled = true
-  exact   = false
+  exact   = true
 }
 
 # Enforces naming conventions for resources, data sources, etc.
@@ -28,7 +28,7 @@ rule "terraform_naming_convention" {
 
 plugin "terraform" {
   enabled = true
-  version = "0.10.0"
+  version = "0.14.1"
   source  = "github.com/terraform-linters/tflint-ruleset-terraform"
   preset  = "all"
 }
